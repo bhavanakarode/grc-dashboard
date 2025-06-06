@@ -46,7 +46,7 @@ const RiskOverview = () => {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          color: 'white',
+          color: 'rgb(59, 130, 246)',
           fontSize: '1.5rem',
           fontWeight: 'bold'
         }}>{score}</div>
@@ -57,7 +57,7 @@ const RiskOverview = () => {
           transform: 'translateX(-50%)',
           fontSize: '0.75rem',
           color: 'gray'
-        }}>0:100</div>
+        }}>:100</div>
       </div>
       <ul style={{ marginTop: '1rem' }}>
         {categories.map((cat, index) => <li key={index}>{cat}</li>)}
