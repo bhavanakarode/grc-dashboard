@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app.light {
+  background: #f2f4f8;
+  color: #0f111a;
+}
+
+.app.dark {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.sidebar {
+  width: 60px;
+  background: #161b22;
+  color: #8b949e;
+  padding: 1rem 0.5rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: 100;
+}
+
+.sidebar button {
+  background: transparent;
+  color: inherit;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-left: 60px;
+  padding: 1.5rem;
+  min-height: 100vh;
+  background: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.app.light .card {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  color: #0f111a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.progress-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.progress {
+  background: #2c313a;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.app.light .progress {
+  background: #e6e6e6;
+}
+
+.progress-bar {
+  background: #3b82f6;
+  height: 100%;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+}
+
+.notification-dropdown .dropdown-menu {
+  background: #21262d;
+  border: 1px solid #30363d;
+  padding: 0.5rem;
+  list-style: none;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  min-width: 220px;
+  border-radius: 6px;
+  color: #c9d1d9;
+}
+
+.app.light .notification-dropdown .dropdown-menu {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  color: #0f111a;
+}
+
+.notification-dropdown button {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.dot-high {
+  background: #ff4d4f;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+.dot-medium {
+  background: #faad14;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+.dot-low {
+  background: #52c41a;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+button {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.export-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.export-controls button,
+.export-controls a {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #3b82f6;
+  background: transparent;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.export-controls button:hover,
+.export-controls a:hover {
+  background: #3b82f6;
+  color: #fff;
+  transform: scale(1.05);
+}
